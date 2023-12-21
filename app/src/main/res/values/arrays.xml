@@ -1,0 +1,307 @@
+<resources>
+    <!-- Arrays &amp;-->
+    <string-array name="tabs">
+        <item>Spotlight</item>
+        <item>Bills</item>
+        <item>Notices</item>
+        <item>Events</item>
+    </string-array>
+
+    <string-array name="surveytabs">
+        <item>Survey</item>
+        <item>Queries</item>
+        <item>Submissions</item>
+    </string-array>
+
+    <!-- Arrays &amp;-->
+    <string-array name="posts">
+        <item>All</item>
+        <item>Add Voice</item>
+        <item>Deadline Today</item>
+        <item>Approved</item>
+    </string-array>
+
+    <string-array name="age">
+        <item>18 – 23</item>
+        <item>23 – 30</item>
+        <item>30 – 40</item>
+        <item>40 – 50</item>
+        <item>50 – 60</item>
+        <item>60 – 100</item>
+    </string-array>
+
+    <string-array name="subcounty">
+        <item>Dagoreti North</item>
+        <item>Dagoreti South</item>
+        <item>Embakasi Central</item>
+        <item>Embakasi East</item>
+        <item>Embakasi South</item>
+        <item>Embakasi North</item>
+        <item>Embakasi West</item>
+        <item>Kasarani</item>
+        <item>Kibra</item>
+        <item>Kamukunji</item>
+        <item>Langata</item>
+        <item>Makadara</item>
+        <item>Mathare</item>
+        <item>Ruaraka</item>
+        <item>Rurita</item>
+        <item>Roysambu</item>
+        <item>Starehe</item>
+        <item>Westlands</item>
+    </string-array>
+
+    <string-array name="ward">
+        <item>Airbase</item>
+        <item>Baba Ndogo</item>
+        <item>California</item>
+        <item>Clay City</item>
+        <item>Dandora Area 1</item>
+        <item>Dandora Area 2</item>
+        <item>Dandora Area 3</item>
+        <item>Dandora Area 4</item>
+        <item>Eastleigh North</item>
+        <item>Eastleigh South</item>
+        <item>Embakasi</item>
+        <item>Gatina</item>
+        <item>Githurai</item>
+        <item>Harambee</item>
+        <item>Hospital</item>
+        <item>Huruma</item>
+        <item>Imara Daima</item>
+        <item>Kabiro</item>
+        <item>Kahawa</item>
+        <item>Kahawa West</item>
+        <item>Kangemi</item>
+        <item>Karen</item>
+        <item>Karura</item>
+        <item>Kasarani</item>
+        <item>Kariobangi North</item>
+        <item>Kariobangi South</item>
+        <item>Kayole North</item>
+        <item>Kayole Central</item>
+        <item>Kayole South</item>
+        <item>Kawangware</item>
+        <item>Kiamaiko</item>
+        <item>Kileleshwa</item>
+        <item>Kilimani</item>
+        <item>Kitisuru</item>
+        <item>Komarock</item>
+        <item>Korogocho</item>
+        <item>Kware</item>
+        <item>Kwa Njenga</item>
+        <item>Kwa Reuben</item>
+        <item>Laini Saba</item>
+        <item>Landimawe</item>
+        <item>Lindi</item>
+        <item>Lucky Summer</item>
+        <item>Lower Savannah</item>
+        <item>Mabatini</item>
+        <item>Makina</item>
+        <item>Makongeni</item>
+        <item>Maringo</item>
+        <item>Mathare North</item>
+        <item>Matopeni</item>
+        <item>Mihango</item>
+        <item>Mlango Kubwa</item>
+        <item>Mountain View</item>
+        <item>Mowlem</item>
+        <item>Mugumu-ini</item>
+        <item>Mutu-ini</item>
+        <item>Mwiki</item>
+        <item>Nairobi Central</item>
+        <item>Nairobi South</item>
+        <item>Nairobi West</item>
+        <item>Njiru</item>
+        <item>Ngando</item>
+        <item>Ngara</item>
+        <item>Ngei</item>
+        <item>Nyayo Highrise</item>
+        <item>Pangani</item>
+        <item>Parklands</item>
+        <item>Pipeline</item>
+        <item>Riruta</item>
+        <item>Roysambu</item>
+        <item>Ruai</item>
+        <item>Sarangombe</item>
+        <item>South C</item>
+        <item>Umoja 1</item>
+        <item>Umoja 2</item>
+        <item>Upper Savannah</item>
+        <item>Utalii</item>
+        <item>Utawala</item>
+        <item>Uthiru</item>
+        <item>Viwandani</item>
+        <item>Waithaka</item>
+        <item>Woodley</item>
+        <item>Zimmerman</item>
+        <item>Ziwani</item>
+    </string-array>
+
+    <string-array name="counties">
+        <item>Nairobi</item>
+    </string-array>
+
+    <string-array name="billtabs">
+        <item>Voices</item>
+        <item>Summary</item>
+        <item>Queries</item>
+        <item>Approved</item>
+    </string-array>
+
+    <string-array name="expiredTabs">
+        <item>Follow Up</item>
+        <item>Summary</item>
+        <item>Impact</item>
+    </string-array>
+
+    <string-array name="billpass">
+        <item>Deleted</item>
+        <item>Passed</item>
+    </string-array>
+
+    <string-array name="nationality">
+        <item>Kenya</item>
+    </string-array>
+
+    <string-array name="sections">
+        <item>Section 1</item>
+        <item>Section 2</item>
+        <item>Section 3</item>
+        <item>Section 4</item>
+        <item>Section 5</item>
+        <item>Section 6</item>
+        <item>Section 7</item>
+        <item>Section 8</item>
+        <item>Section 9</item>
+        <item>Section 10</item>
+    </string-array>
+
+    <string-array name="options">
+        <item>Strongly Agree</item>
+        <item>Agree</item>
+        <item>Disagree</item>
+        <item>Strongly Disagree</item>
+    </string-array>
+
+    <string-array name="industries">
+        <item>Advertising, Media and Communications</item>
+        <item>Agriculture, Fishing and Forestry</item>
+        <item>Artisan</item>
+        <item>Automotive and Aviation</item>
+        <item>Banking, Finance and Insurance</item>
+        <item>Creatives and Film</item>
+        <item>Construction</item>
+        <item>Education</item>
+        <item>Energy and Utilities</item>
+        <item>Enforcement and Security</item>
+        <item>Entertainment, Events and Sports</item>
+        <item>Government</item>
+        <item>Healthcare</item>
+        <item>Hospitality and Hotel</item>
+        <item>IT and Telecoms</item>
+        <item>Legal</item>
+        <item>Manufacturing, Processing and Warehousing</item>
+        <item>Mining, Energy and Metals</item>
+        <item>NGO, NPO and Charity</item>
+        <item>Real Estate</item>
+        <item>Recruitment</item>
+        <item>Retail, Fashion and FMCG</item>
+        <item>Shipping and Logistics</item>
+        <item>Tourism</item>
+        <item>Transport</item>
+    </string-array>
+
+    <string-array name="topics">
+        <item>Agriculture, Livestock and Fisheries</item>
+        <item>Commissions and Independent Bodies</item>
+        <item>Constitutional Amendment</item>
+        <item>Education</item>
+        <item>Environment and Forestry</item>
+        <item>Health</item>
+        <item>Information Communication and Technology</item>
+        <item>Industry, Trade and Cooperatives</item>
+        <item>Land and Physical Planning</item>
+        <item>Labour and Social Security</item>
+        <item>Political Parties and Electoral Processes</item>
+        <item>Public Finance</item>
+        <item>Public Service, Youth and Gender</item>
+        <item>Regional Development</item>
+        <item>Sports, Culture and Heritage</item>
+        <item>Tourism and Sanitation</item>
+        <item>Transport, Infrastructure and Public Works</item>
+        <item>Water and Sanitation</item>
+    </string-array>
+
+    <string-array name="level">
+        <item>Associations</item>
+        <item>County Assembly</item>
+        <item>National Assembly</item>
+        <item>Senate</item>
+        <item>Ministry</item>
+        <item>NGO</item>
+        <item>Political Party</item>
+        <item>Public Figure</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Female</item>
+        <item>Male</item>
+        <item>Rather not Say</item>
+    </string-array>
+
+    <string-array name="billevel">
+        <item>First Reading</item>
+        <item>Second Reading</item>
+        <item>Third Reading</item>
+        <item>Presidential Assent</item>
+    </string-array>
+
+    <string-array name="county">
+        <item>Baringo</item>
+        <item>Bomet</item>
+        <item>Bungoma</item>
+        <item>Busia</item>
+        <item>Elgeyo Marakwet</item>
+        <item>Embu</item>
+        <item>Garissa</item>
+        <item>Homabay</item>
+        <item>Isiolo</item>
+        <item>Kajiado</item>
+        <item>Kakamega</item>
+        <item>Kericho</item>
+        <item>Kiambu</item>
+        <item>Kilifi</item>
+        <item>Kirinyaga</item>
+        <item>Kisii</item>
+        <item>Kisumu</item>
+        <item>Kitui</item>
+        <item>Kwale</item>
+        <item>Laikipia</item>
+        <item>Lamu</item>
+        <item>Machakos</item>
+        <item>Makueni</item>
+        <item>Mandera</item>
+        <item>Marsabit</item>
+        <item>Meru</item>
+        <item>Migori</item>
+        <item>Mombasa</item>
+        <item>Muranga</item>
+        <item>Nairobi</item>
+        <item>Nakuru</item>
+        <item>Nandi</item>
+        <item>Narok</item>
+        <item>Nyamira</item>
+        <item>Nyandarua</item>
+        <item>Nyeri</item>
+        <item>Samburu</item>
+        <item>Siaya</item>
+        <item>Taita Taveta</item>
+        <item>Tana River</item>
+        <item>Tharaka Nithi</item>
+        <item>Trans Nzoia</item>
+        <item>Turkana</item>
+        <item>Wajir</item>
+        <item>West Pokot</item>
+    </string-array>
+</resources>

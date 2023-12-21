@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dimen_5"
+    android:background="@color/colorWhite"
+    android:id="@+id/container"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@drawable/outline_article_24"
+                android:layout_centerVertical="true"
+                android:id="@+id/topicImageView"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:contentDescription="@string/app_name"
+                app:tint="@color/colorGray" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_below="@id/topicImageView"
+                android:id="@+id/dateConstraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImageView"
+                    android:src="@drawable/logo"
+                    app:cardCornerRadius="@dimen/dimen_8"
+                    app:layout_constraintBottom_toBottomOf="@id/dateConstraintLayout"
+                    app:layout_constraintTop_toTopOf="@id/dateConstraintLayout"
+                    app:layout_constraintDimensionRatio="1:1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_weight="9"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:scrollHorizontally="true"
+                android:hint="@string/app_name"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/gray"
+                android:id="@+id/topicTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:visibility="invisible"
+                    android:contentDescription="@string/app_name"
+                    android:layout_alignParentEnd="true"
+                    app:srcCompat="@drawable/ic_more_vert_black_24dp"
+                    android:id="@+id/optionImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:ellipsize="end"
+                    android:scrollHorizontally="true"
+                    android:maxLines="1"
+                    android:drawableTint="@color/colorPrimary"
+                    android:drawablePadding="@dimen/dimen_5"
+                    app:drawableEndCompat="@drawable/baseline_verified_24"
+                    android:text="@string/app_name"
+                    android:textColor="@color/colorBlack"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:ellipsize="end"
+                    android:scrollHorizontally="true"
+                    android:maxLines="1"
+                    android:layout_below="@id/textView"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/monday_7_december_2022"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:id="@+id/subTextView"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp" />
+
+
+            </RelativeLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="@dimen/dimen_8"
+                android:id="@+id/cardView"
+                app:cardCornerRadius="@dimen/dimen_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@color/colorPrimary"
+                    android:id="@+id/linearLayout"
+                    android:padding="@dimen/dimen_10"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:maxLines="2"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textColor="@color/colorWhite"
+                        android:text="@string/the_cotton_industry_development_bill_senate_bills_no_55_of_2021"
+                        android:id="@+id/titleTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:maxLines="8"
+                        android:ellipsize="end"
+                        android:scrollHorizontally="true"
+                        android:layout_marginTop="8dp"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:textColor="@color/colorWhite"
+                        android:text="The Cotton Industry Development Bill (Senate Bills No. 55 fo 2021) was read a First Time in the senate on 21st Decemeber 2021 and thereafter stood committed to the Standing Committee on Agriculture, Livestock and Fisheries \n \n Pursuant to the provisions of Article 118 and standing order 140 (5) of the Senate Standing Orders, the Standing Order Committee on Agriculture, Livestock and Fisheries now invites interested members of the public to submit amy representations that they have on the Bill, by the way of written memoranda \n \n The Written memoranda may be emailed to the Office of the Clerk of Senate on the address - csenate@parliament.go.ke and copied to senatescalf@parliament.go.ke to be received on or before Monday, 7th February 2022 at 5:00 pm"
+                        android:id="@+id/summaryTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:visibility="gone"
+                android:ellipsize="end"
+                android:scrollHorizontally="true"
+                android:maxLines="1"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:hint="@string/senate"
+                android:fontFamily="@font/open_sans_regular"
+                android:textColor="@color/colorGray"
+                android:id="@+id/locationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:scrollHorizontally="true"
+                    android:layout_marginEnd="@dimen/dimen_2"
+                    android:id="@+id/commentButton"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:text="Add your Voice"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:id="@+id/shareButton"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:text="Share"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:baselineAligned="false">
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            app:tint="@color/colorGray"
+                            android:id="@+id/commentImageView"
+                            android:layout_width="@dimen/dimen_20"
+                            android:layout_height="20dp"
+                            android:scaleType="fitCenter"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/ic_chat_bubble_outline_black_24dp"
+                            android:contentDescription="@string/comment_on_post" />
+
+                        <TextView
+                            android:fontFamily="sans-serif-light"
+                            android:id="@+id/commentTextView"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12.5sp"/>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            app:tint="@color/colorGray"
+                            android:id="@+id/upvoteImageView"
+                            android:layout_width="@dimen/dimen_20"
+                            android:layout_height="@dimen/dimen_20"
+                            android:scaleType="fitCenter"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/ic_baseline_arrow_circle_up_24"
+                            android:contentDescription="@string/like_post" />
+
+                        <TextView
+                            android:fontFamily="sans-serif-light"
+                            android:id="@+id/upvoteTextView"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="13sp"/>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            app:tint="@color/colorGray"
+                            android:id="@+id/downvoteImageView"
+                            android:layout_width="20dp"
+                            android:layout_height="@dimen/dimen_20"
+                            android:scaleType="fitCenter"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/ic_baseline_arrow_circle_down_24"
+                            android:contentDescription="@string/downvote" />
+
+                        <TextView
+                            android:fontFamily="sans-serif-light"
+                            android:id="@+id/downvoteTextView"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12.5sp"/>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            app:tint="@color/colorGray"
+                            android:id="@+id/shareImageView"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:scaleType="fitCenter"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/ic_share_blue_24dp"
+                            android:contentDescription="@string/share_post" />
+
+                        <TextView
+                            android:fontFamily="sans-serif-light"
+                            android:id="@+id/shareTextView"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12.5sp"/>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

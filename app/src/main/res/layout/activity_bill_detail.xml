@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BillDetail">
+
+    <androidx.appcompat.widget.Toolbar
+        app:subtitle="@string/monday_7_december_2022"
+        app:titleTextColor="@color/toolbarTitle"
+        android:background="@color/toolbarBackground"
+        app:title="Agriculture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar">
+
+        <ImageView
+            android:visibility="gone"
+            android:contentDescription="@string/content_description"
+            android:layout_margin="@dimen/dimen_10"
+            android:layout_gravity="center_vertical|end"
+            app:srcCompat="@drawable/outline_timeline_24"
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tint="@color/toolbarTitle" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="@dimen/dimen_8"
+                android:layout_margin="@dimen/dimen_8"
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@color/colorPrimary"
+                    android:id="@+id/linearLayout"
+                    android:padding="@dimen/dimen_10"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:maxLines="2"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textColor="@color/colorWhite"
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:maxLines="15"
+                        android:scrollHorizontally="true"
+                        android:layout_marginTop="8dp"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:textColor="@color/colorWhite"
+                        android:id="@+id/subTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:drawableTint="@color/colorWhite"
+                android:drawablePadding="@dimen/dimen_10"
+                android:drawableEnd="@drawable/ic_baseline_cloud_download_24"
+                android:layout_marginEnd="@dimen/dimen_8"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:textAllCaps="false"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textSize="18sp"
+                android:textColor="@color/colorWhite"
+                android:text="@string/read_the_bill"
+                android:textAlignment="center"
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_70"/>
+
+            <LinearLayout
+                android:layout_marginHorizontal="@dimen/dimen_8"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_marginEnd="@dimen/dimen_2"
+                    android:id="@+id/commentButton"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:text="@string/add_your_voice"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_marginStart="@dimen/dimen_2"
+                    android:id="@+id/shareButton"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:text="@string/share"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:layout_marginTop="@dimen/dimen_8"
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabGravity="fill"
+                app:tabIndicatorAnimationMode="linear"
+                app:tabIndicatorHeight="0dp"
+                app:tabMode="scrollable"
+                app:tabRippleColor="@null"
+                app:tabSelectedTextColor="@color/colorPrimary"
+                app:tabTextAppearance="@style/TabLayout"
+                app:tabTextColor="@color/black" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:layout_marginBottom="80dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/viewPager"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/dimen_20"
+        android:background="@color/colorPrimary"
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="13sp"
+            android:textAlignment="center"
+            android:text="@string/participation_is_limited_to_nakuru_county_members"
+            android:fontFamily="@font/open_sans_regular"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/snackTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_margin="16dp"
+        android:textSize="16sp"
+        android:minHeight="56dp"
+        app:iconTint="@color/colorWhite"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textAllCaps="false"
+        android:text="@string/add_your_voice"
+        app:icon="@drawable/ic_outline_campaign_24"/>
+
+</RelativeLayout>

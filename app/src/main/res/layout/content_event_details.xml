@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_10"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_event_detail"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_marginBottom="@dimen/padding_16"
+            android:layout_marginTop="@dimen/dimen_50"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+
+        <com.luseen.autolinklibrary.AutoLinkTextView
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:text="@string/slogan"
+            android:fontFamily="@font/open_sans_regular"
+            android:id="@+id/subTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_marginBottom="@dimen/padding_16"
+            android:layout_marginTop="@dimen/padding_16"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:ellipsize="end"
+                android:scrollHorizontally="true"
+                android:text="@string/app_name"
+                android:layout_weight="1"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/open_sans_regular"
+                android:maxLines="1"
+                android:id="@+id/locationTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                app:drawableStartCompat="@drawable/outline_location_on_24"
+                app:drawableTint="@color/colorPrimary" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/padd_10"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/open_sans_regular"
+                android:maxLines="1"
+                android:text="@string/_10_30_pm"
+                android:id="@+id/timeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                app:drawableLeftCompat="@drawable/outline_watch_24"
+                app:drawableTint="@color/colorPrimary"
+                app:drawableStartCompat="@drawable/outline_watch_24" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginBottom="@dimen/padding_16"
+            android:layout_marginTop="@dimen/padding_16"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+
+        <TextView
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="@string/featured_bills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/padding_16"
+            tools:itemCount="0"
+            tools:listitem="@layout/bill_item"
+            android:id="@+id/recyclerView"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:textAllCaps="false"
+            android:fontFamily="@font/open_sans_semibold"
+            android:textSize="18sp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/primary_background_button"
+            android:text="Click Event Link"
+            android:textAlignment="center"
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60"/>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginBottom="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewPager"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

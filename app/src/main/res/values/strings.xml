@@ -1,0 +1,258 @@
+<resources>
+    <string name="app_name">CivicX</string>
+
+    <!-- Splash -->
+    <string name="slogan">Amplifying Public Voice in the Law Making Process</string>
+    <string name="privacy_policy">By Creating an account with CivicX, you agree to our <font color='#6698FF'> Privacy Policy</font> and <font color='#6698FF'> Terms of Service</font></string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="content_description">Content Description</string>
+
+    <string name="login_already">You already have an account?  <font color='#6698FF'> Login Instead</font></string>
+
+    <!-- Create Profile -->
+    <string name="create_user_profile">Create User Profile</string>
+    <string name="enter_name">Enter your Name</string>
+    <string name="enter_email">Enter your Email</string>
+    <string name="select_county">Select your County</string>
+    <string name="next">Next</string>
+    <string name="publish">Publish</string>
+    <string name="finish">Finish</string>
+
+    <string name="deadline">Deadline: %s</string>
+    <string name="eventDate">Event Date: %s</string>
+
+    <!-- Main Activity -->
+    <string name="menu_home">Bills</string>
+    <string name="menu_national">National Assembly</string>
+    <string name="menu_senate">Senate</string>
+    <string name="menu_county">County Assembly</string>
+    <string name="menu_event">Events</string>
+    <string name="menu_chat">Chats</string>
+    <string name="menu_topic">Topics</string>
+    <string name="allrightsreserved">&#169; CivicX 2023 All Rights Reserved.</string>
+    <string name="title_activity_landing_page">LandingPage</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Create Bill -->
+
+    <!-- Bill Detail -->
+
+    <!-- Create Comment -->
+
+    <!-- Create Event -->
+
+    <!-- Event Detail-->
+
+    <!-- ChatRoom -->
+    <string name="participation">Participation is limited to %s County Residents.</string>
+    <string name="send_message">Send Message…</string>
+    <string name="_4_min">4 min</string>
+    <string name="message">Message</string>
+    <string name="enter_message">Enter Message</string>
+    <string name="event_passed">Event Passed</string>
+    <string name="online_link">Online Link</string>
+    <string name="_10_30_pm">10:30 pm</string>
+    <string name="select">Select</string>
+    <string name="create_event">Create Event</string>
+    <string name="select_color">Select Color</string>
+    <string name="enter_event_title">Enter Event Title</string>
+    <string name="event_event_summary">Event Event Summary</string>
+    <string name="enter_event_link">Enter Event Link</string>
+    <string name="enter_event_location">Enter Event Location</string>
+    <string name="done">DONE</string>
+    <string name="cancel">CANCEL</string>
+    <string name="selected">Selected</string>
+    <string name="enter_bill_title">Enter Bill Title</string>
+    <string name="enter_bill_summary">Enter Bill Summary</string>
+    <string name="create_bill">Create Bill</string>
+    <string name="the_cotton_industry_development_bill_senate_bills_no_55_of_2021">The Cotton Industry Development Bill (Senate Bills No. 55 of 2021)</string>
+    <string name="senate">Senate</string>
+    <string name="add_your_voice">Add your Voice</string>
+    <string name="like">Like</string>
+    <string name="share">Share</string>
+    <string name="monday_7_december_2022">Monday, 7 December 2022</string>
+    <string name="select_date_of_birth">Select Date of Birth</string>
+    <string name="select_house_level">Select House Level</string>
+    <string name="select_topic">Select Topic</string>
+    <string name="select_public_participation_due_date">Select Public Participation Due Date</string>
+    <string name="enter_bill_weblink">Enter Proposal Download link</string>
+    <string name="read_the_bill">Read the Whole Article</string>
+    <string name="menu_bills">Bills</string>
+    <string name="agriculture">Agriculture</string>
+    <string name="select_speakers">Select Speakers</string>
+    <string name="_0">0</string>
+    <string name="participation_is_limited_to_nakuru_county_members">Participation is limited to Nakuru County Members</string>
+    <string name="participation_closed">Participation is Closed</string>
+    <string name="enter_respective_house_email">Enter Respective House Email</string>
+    <string name="_2_days_to_go">2 Days to go</string>
+    <string name="select_bill">Select Bill</string>
+    <string name="featured_bills">Featured Bills</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="subscribed">Subscribed</string>
+
+    <string name="select_gender">Select Gender</string>
+    <string name="select_your_job_industry">Select your Job Industry</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_notices">Notices</string>
+
+    <string name="msg_subscribed">Subscribed to Notifications</string>
+    <string name="msg_token_fmt" translatable="false">FCM registration Token: %s</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="true">Weather</string>
+    <string name="msg_subscribe_failed">Failed to subscribe to Notifications</string>
+    <string name="fcm_message">FCM Message</string>
+    <string name="update_your_name">Update your Name</string>
+    <string name="update_your_job_industry">Update your Job Industry</string>
+    <string name="update_your_county">Update your County</string>
+    <string name="update">Update</string>
+    <string name="edit_user_profile">Edit User Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="concerned_citizen">Concerned Citizen</string>
+    <string name="update_user_details">Update User Details</string>
+    <string name="publish_updates">Publish Updates</string>
+    <string name="specify_bill_section">Specify Bill Section</string>
+    <string name="interpretation">Interpretation</string>
+    <string name="add_your_summary">Add your Summary</string>
+    <string name="upvote_this_comment">Upvote this Post</string>
+    <string name="share_comment">Share Comment</string>
+    <string name="message_the_publisher">Message the Publisher</string>
+    <string name="like_post">Like Post</string>
+    <string name="reply_on_the_comment">Reply on the Comment</string>
+    <string name="bill_stage">Bill Stage</string>
+    <string name="the_whole_bill">The Whole Bill</string>
+    <string name="share_your_frustrations">Share your Frustrations</string>
+    <string name="select_your_country">Select your Country</string>
+    <string name="share_bills_impact">Share Bill Impact</string>
+    <string name="what_impact_has_this_bill_have_on_you_family_community_business">What impact has this Bill have on you/family/Community/Business?</string>
+    <string name="upload_profile_pic">Upload Profile Pic</string>
+    <string name="search_for_bills_here">Search for Bills here...</string>
+    <string name="action_search">Search</string>
+    <string name="action_user_profile">User Profile</string>
+    <string name="action_sign_out">Sign Out</string>
+    <string name="comment_options">Post Options</string>
+    <string name="delete_comment">Delete Post</string>
+    <string name="edit_comment">Edit Post</string>
+    <string name="edit_comment_section">Edit Post Section</string>
+    <string name="report_comment">Report Post</string>
+    <string name="flagged_comment">Flagged Post</string>
+    <string name="action_delete">Delete Profile</string>
+    <string name="action_report">Report</string>
+    <string name="change_profile_pic">Change Profile Pic</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="sign_in_with_email">Sign In with Email</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="account_recovery">Account Recovery</string>
+    <string name="recover_email">Recover Email</string>
+    <string name="login_instead">Login Instead</string>
+    <string name="signup">SignUp</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="repeat_your_password">Repeat your Password</string>
+    <string name="login_with_email">Login with Email</string>
+    <string name="sign_up_instead">Sign Up Instead</string>
+    <string name="image">Image</string>
+    <string name="location">Location</string>
+    <string name="comments">Comments</string>
+    <string name="comment_on_post">Comment on Post</string>
+    <string name="downvote">DownVote</string>
+    <string name="share_post">Share Post</string>
+    <string name="event">Event</string>
+    <string name="notice">Notice</string>
+    <string name="spotlight">Spotlight</string>
+    <string name="bill">Bill</string>
+    <string name="topic">Topic</string>
+    <string name="select_your_sub_county">Select your Sub County</string>
+    <string name="select_your_age_group">Select your Age Group</string>
+    <string name="select_ward">Select Ward</string>
+    <string name="select_governance_structure">Select Governance Structure</string>
+    <string name="select_option">Select Option</string>
+    <string name="update_governance">Update Governance</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="post_query">Post Query</string>
+    <string name="read_the_whole_article">Read the whole Article</string>
+    <string name="uploaded_image">Uploaded Image</string>
+    <string name="view_your_profile">View your Profile</string>
+    <string name="update_your_profile">Update your Profile</string>
+    <string name="submit">Submit</string>
+
+
+    <string name="the_cotton_industry_development_bill_senate_bills_no_55_fo_2021_was_read_a_first_time_in_the_senate_on_21st_decemeber_2021_and_thereafter_stood_committed_to_the_standing_committee_on_agriculture_livestock_and_fisheries">The Cotton Industry Development Bill (Senate Bills No. 55 fo 2021) was read a First Time in the senate on 21st Decemeber 2021 and thereafter stood committed to the Standing Committee on Agriculture, Livestock and Fisheries</string>
+    <string name="create_brand">Create Brand</string>
+    <string name="enter_brand_title">Enter Brand Title</string>
+    <string name="enter_brand_email">Enter Brand Email</string>
+    <string name="enter_brand_summary">Enter Brand Summary</string>
+    <string name="select_event_type">Select Event Type</string>
+    <string name="add_bill_timeline">Add Bill Timeline</string>
+    <string name="open_for_public_input">Open for Public Input</string>
+    <string name="select_bill_stage">Select Bill Stage</string>
+    <string name="create_public_notice">Create Public Notice</string>
+
+
+
+    <string name="web_link">Web Link</string>
+    <string name="create_notice">Create Notice</string>
+    <string name="community">Community</string>
+    <string name="pub_ex">Public Participation period has expired</string>
+
+    <string name="update_brand_category">Update Brand Category</string>
+    <string name="update_brand_summary">Update Brand Summary</string>
+    <string name="update_brand_email">Update Brand Email</string>
+    <string name="update_brand_title">Update Brand Title</string>
+    <string name="update_brand_profile">Update Brand Profile</string>
+
+    <string name="update_comment_status">Update Comment Status</string>
+
+
+    <string name="update_post">Update Post</string>
+    <string name="update_bill_stage">Update Post Stage</string>
+    <string name="bill_options">Post Options</string>
+    <string name="delete_bill">Delete Post</string>
+    <string name="add_bill_summary">Add Post Summary</string>
+    <string name="bill_summary">Post Summary</string>
+    <string name="edit_bill_summary">Edit Post Summary</string>
+    <string name="edit_bill_title">Edit Post Title</string>
+    <string name="edit_bill">Edit Post</string>
+
+
+    <string name="action_share">Share</string>
+    <string name="action_edit">Edit</string>
+    <string name="upload_brand_pic">Upload Brand Pic</string>
+    <string name="create_legacy">Create Legacy</string>
+    <string name="enter_location">Enter Location</string>
+    <string name="select_topics">Select Topics</string>
+    <string name="select_due_date">Select Due Date</string>
+    <string name="select_event_date">Select Event Date</string>
+
+
+    <string name="delete">Delete</string>
+    <string name="options">Options</string>
+
+
+    <string name="select_category">Select Category</string>
+    <string name="add_location">Add Location</string>
+    <string name="enter_notice_summary">Enter Notice Summary</string>
+    <string name="select_brand_type">Select Brand Type</string>
+    <string name="type_section">Type Section</string>
+    <string name="delete_section">Delete Section</string>
+    <string name="enter_survey_title">Enter Survey Title</string>
+    <string name="enter_survey_summary">Enter Survey Summary</string>
+    <string name="add_list_survey">Add List Survey</string>
+    <string name="add_form_survey">Add Form Survey</string>
+    <string name="add_survey_question">Add Survey Question</string>
+    <string name="add_survey_list_options">Add Survey List options</string>
+    <string name="enter_survey_link">Enter Survey Link</string>
+    <string name="create_survey">Create Survey</string>
+    <string name="add_section">Add Section</string>
+    <string name="add_input">Add Input</string>
+    <string name="add_queries">Add Queries</string>
+    <string name="add_approved">Add Approved</string>
+    <string name="select_type">Select Type</string>
+    <string name="edit_survey">Edit Survey</string>
+</resources>

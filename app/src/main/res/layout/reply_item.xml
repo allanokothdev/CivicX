@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorWhite"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/brandLayout"
+        android:layout_margin="@dimen/dimen_10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="@dimen/padding_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/logo"
+                android:scaleType="centerCrop"
+                android:id="@+id/brandImageView"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:contentDescription="@string/content_description" />
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_marginEnd="@dimen/dimen_10"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:maxLines="1"
+                android:fontFamily="@font/open_sans_semibold"
+                android:hint="@string/app_name"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/brandTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:maxLines="1"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/open_sans_regular"
+                android:hint="@string/_4_min"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/brandCategoryTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        app:cardCornerRadius="@dimen/dimen_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@color/colorPrimary"
+            android:id="@+id/linearLayout"
+            android:padding="@dimen/dimen_10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:maxLines="2"
+                android:textSize="20sp"
+                android:fontFamily="@font/open_sans_bold"
+                android:textColor="@color/colorWhite"
+                android:text="@string/the_cotton_industry_development_bill_senate_bills_no_55_of_2021"
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:maxLines="8"
+                android:ellipsize="end"
+                android:scrollHorizontally="true"
+                android:layout_marginTop="8dp"
+                android:textSize="15sp"
+                android:fontFamily="@font/open_sans_regular"
+                android:textColor="@color/colorWhite"
+                android:text="The Cotton Industry Development Bill (Senate Bills No. 55 fo 2021) was read a First Time in the senate on 21st Decemeber 2021 and thereafter stood committed to the Standing Committee on Agriculture, Livestock and Fisheries \n \n Pursuant to the provisions of Article 118 and standing order 140 (5) of the Senate Standing Orders, the Standing Order Committee on Agriculture, Livestock and Fisheries now invites interested members of the public to submit amy representations that they have on the Bill, by the way of written memoranda \n \n The Written memoranda may be emailed to the Office of the Clerk of Senate on the address - csenate@parliament.go.ke and copied to senatescalf@parliament.go.ke to be received on or before Monday, 7th February 2022 at 5:00 pm"
+                android:id="@+id/subTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:text="@string/senate"
+                    android:id="@+id/houseTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_toEndOf="@id/houseTextView"
+                    android:textAlignment="viewEnd"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:text="@string/monday_7_december_2022"
+                    android:id="@+id/subItemTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_marginStart="@dimen/dimen_24"
+        android:background="@color/colorGray"
+        android:layout_width="2dp"
+        android:layout_height="@dimen/dimen_30"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_alignParentStart="true"
+                app:cardCornerRadius="@dimen/padding_8"
+                android:id="@+id/replyCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/logo"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/imageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="@string/content_description" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dimen_10"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:layout_toStartOf="@id/relativeLayout"
+                android:layout_toEndOf="@id/replyCardView"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:maxLines="1"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:hint="@string/app_name"
+                    android:textColor="@color/black"
+                    android:id="@+id/replyTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:maxLines="1"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:hint="@string/_4_min"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/replySubTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"/>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/relativeLayout"
+                android:layout_width="@dimen/dimen_40"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:visibility="invisible"
+                    android:layout_toStartOf="@id/replySubItemTextView"
+                    android:layout_alignParentStart="true"
+                    android:contentDescription="@string/content_description"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_baseline_arrow_circle_up_24"
+                    android:id="@+id/likeImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:tint="@color/colorPrimary" />
+
+                <TextView
+                    android:visibility="invisible"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:id="@+id/replySubItemTextView"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:text="@string/privacy_policy"
+            android:layout_marginStart="@dimen/dimen_55"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/open_sans_regular"
+            android:id="@+id/contentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

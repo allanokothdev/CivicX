@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    android:animateLayoutChanges="true"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:contentInsetLeft="8dp"
+            app:contentInsetStart="8dp"
+            android:background="@color/toolbarBackground"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="@dimen/dimen_8"
+                android:layout_gravity="start|center_vertical"
+                android:src="@drawable/logo"
+                android:id="@+id/logoImageView"
+                android:contentDescription="@string/app_name"
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:fontFamily="@font/open_sans_bold"
+                android:textSize="20sp"
+                android:textColor="@color/toolbarTitle"
+                android:text="@string/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_marginStart="@dimen/dimen_10"
+                android:layout_marginEnd="@dimen/dimen_10"
+                android:layout_gravity="end|center_vertical"
+                android:contentDescription="@string/app_name"
+                android:id="@+id/moreImageView"
+                app:srcCompat="@drawable/ic_more_vert_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tint="@color/colorPrimary" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/progressBar"
+        android:layout_gravity="bottom|center_horizontal"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_30"
+        app:indicatorColor="@color/colorPrimary"
+        app:indicatorName="BallPulseIndicator" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

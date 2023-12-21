@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".EventDetail"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:titleEnabled="false"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cover"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1:1"
+                    android:id="@+id/coverImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:contentDescription="@string/app_name"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_arrow_back_white_24dp"
+                        android:id="@+id/finishImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/colorWhite" />
+
+                    <RelativeLayout
+                        android:layout_toEndOf="@id/finishImageView"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone"
+                        android:layout_marginStart="6dp"
+                        android:id="@+id/relativeLayout"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/toolbarCardView"
+                            app:cardCornerRadius="@dimen/padding_8"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/cover"
+                                android:id="@+id/toolbarImageView"
+                                android:scaleType="centerCrop"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"/>
+
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_marginStart="6dp"
+                            android:layout_toEndOf="@id/toolbarCardView"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:drawableTint="@color/white"
+                                android:drawablePadding="@dimen/dimen_5"
+                                app:drawableEndCompat="@drawable/baseline_verified_24"
+                                android:maxLines="1"
+                                android:text="@string/app_name"
+                                android:fontFamily="@font/open_sans_semibold"
+                                android:id="@+id/toolbarTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorWhite" />
+
+                            <TextView
+                                android:id="@+id/toolbarSubTextView"
+                                android:maxLines="1"
+                                android:text="@string/app_name"
+                                android:fontFamily="@font/open_sans_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorWhite"/>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_margin="@dimen/dimen_10"
+                        android:contentDescription="@string/app_name"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_share_blue_24dp"
+                        android:id="@+id/shareImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/colorWhite" />
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_event_details" />
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:transitionName="cardView"
+        android:id="@+id/cardView"
+        app:cardCornerRadius="@dimen/padding_8"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="@dimen/dimen_16"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/cardLayout"
+            android:layout_width="@dimen/dimen_90"
+            android:layout_height="@dimen/dimen_90">
+
+            <TextView
+                android:text="23\nMay"
+                android:id="@+id/dateTextView"
+                android:layout_centerInParent="true"
+                android:textSize="23sp"
+                android:fontFamily="@font/open_sans_bold"
+                android:textColor="@color/colorWhite"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/progressBar"
+        android:layout_gravity="bottom|center_horizontal"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_30"
+        app:indicatorColor="@color/colorPrimary"
+        app:indicatorName="BallPulseIndicator" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_margin="16dp"
+        android:textSize="16sp"
+        android:minHeight="56dp"
+        app:iconTint="@color/colorWhite"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textAllCaps="false"
+        android:text="Post Query"
+        app:icon="@drawable/ic_outline_campaign_24"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
